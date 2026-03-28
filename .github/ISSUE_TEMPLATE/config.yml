@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Security reporting guidance
+    url: https://github.com/uysct/pyload-ft-public-full/blob/main/SECURITY.md
+    about: Please read SECURITY.md before publicly reporting sensitive security issues.
