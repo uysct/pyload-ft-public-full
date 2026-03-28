@@ -46,6 +46,12 @@ Run:
       -v /path/to/downloads:/downloads \
       pyload-ft-public-full
 
+## Contributing
+
+Contributions are welcome in areas such as security hardening, safer filesystem behavior, WebUI/API boundary improvements, Docker/runtime cleanup, HTTPS/TLS work, and documentation.
+
+Please read `CONTRIBUTING.md` and `SECURITY.md` before opening larger or security-sensitive changes.
+
 ## Notes
 
 pyLoad-ft is based on pyLoad / pyLoad-ng upstream work and should be treated as a hardened derivative project, not as an official upstream replacement.
