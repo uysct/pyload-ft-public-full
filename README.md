@@ -1,48 +1,51 @@
 # pyload-ft-public-full
 
-A hardened, container-focused future branch of pyLoad with a strong focus on:
+A hardened, container-focused future branch of pyLoad / pyLoad-ng.
+
+> This is an independent derivative line and not an official upstream repository.
+
+## Focus
 
 - security hardening
-- safer path handling
-- stricter WebUI/API access control
-- cleaner container runtime behavior
-- modernized HTTPS/TLS support
-- slim and reproducible Docker builds
+- safer path and filesystem handling
+- stricter WebUI and API boundaries
+- reproducible Docker builds
+- HTTPS/TLS-oriented future work
+- container runtime hardening
 
-## Current publication scope
+## Scope
 
-This public repository currently focuses on the **full** line first.
+This public repository currently publishes the **full** line first.
 
 The separately developed **lite** line exists internally, but is not the first publication target here.
 
-## Main goals
+## Repository layout
 
-- preserve a reproducible Docker-based pyLoad workflow
-- reduce attack surface where practical
-- improve runtime hardening
-- keep the project maintainable and understandable
-- provide a cleaner base for future work
+- `Dockerfile` — main Docker build for the current public full line
+- `docker-entrypoint.sh` — container entrypoint
+- `build-assets/default-settings/` — default config assets
+- `build-assets/unrar` — runtime unrar binary
+- `upstream/pyload/` — upstream-derived source tree with future-line modifications
+- `CHANGELOG.md` — publication-oriented summary
+- `SECURITY.md` — security notes
+- `NOTICE.md` — derivative notice
+- `REPO_SCOPE.md` — publication boundaries
 
-## Highlights of the future line
+## Quick start
 
-- extensive path traversal and filesystem safety hardening
-- tighter API / WebUI permission boundaries
-- hardened container runtime patterns
-- native HTTPS/TLS work with pyOpenSSL support
-- stricter host validation support via `PYLOAD_ALLOWED_HOSTS`
-- improved operational behavior for hardened container deployments
+Build:
 
-## Repository structure
+    docker build -t pyload-ft-public-full .
 
-- `Dockerfile` -> current full image build
-- `docker-entrypoint.sh` -> container entrypoint
-- `build-assets/` -> default config assets and runtime extras
-- `upstream/pyload/` -> upstream-derived source tree with future-line modifications
+Run:
 
-## Important note
+    docker run -d \
+      --name pyload-ft \
+      -p 8000:8000 \
+      -v /path/to/config:/config \
+      -v /path/to/downloads:/downloads \
+      pyload-ft-public-full
+
+## Notes
 
 This project is based on pyLoad / pyLoad-ng upstream work and should be treated as a hardened derivative line, not as an official upstream replacement.
-
-## Status
-
-This repository is being prepared for public release. Documentation and release structure are still being cleaned up and improved.

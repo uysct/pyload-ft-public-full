@@ -1,6 +1,6 @@
 # Notice
 
-This repository contains a public future-oriented derivative line based on pyLoad / pyLoad-ng upstream work.
+This repository contains an independent future-oriented derivative line based on pyLoad / pyLoad-ng upstream work.
 
 It is not an official upstream repository.
 
@@ -8,7 +8,7 @@ Main focus areas of this derivative line include:
 
 - security hardening
 - stricter path and containment checks
-- tighter WebUI/API permission behavior
+- tighter WebUI and API permission behavior
 - container-focused runtime hardening
 - HTTPS/TLS-related operational improvements
 

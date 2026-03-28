@@ -1,21 +1,45 @@
 # Changelog
 
-## pyload-ng-future (public full line)
+## pyload-ft-public-full
 
-### Major work areas included in this line
+This changelog is a public, publication-oriented summary of the current full line.
 
-- large-scale filesystem and path hardening
+It is intentionally condensed and focuses on the most relevant work areas that shaped this derivative branch.
+
+### Main work areas
+
+- filesystem and path hardening across multiple runtime paths
 - archive extraction safety improvements
-- upload / temp / storage path containment checks
+- upload, temp, and storage containment checks
 - API and WebUI permission tightening
 - reduced information exposure in sensitive routes
-- future-line hardening and operational cleanup
-- pyOpenSSL-based native HTTPS/TLS support
+- hardened container runtime patterns
+- native HTTPS/TLS-related future work
 - host allowlist support via `PYLOAD_ALLOWED_HOSTS`
-- container-focused runtime hardening groundwork
-- UI polishing in selected areas
+- selected UI and operational improvements
+- cleaner and more reproducible Docker-based builds
+
+### Security-related themes
+
+The full line includes substantial hardening work in areas such as:
+
+- traversal-resistant path joining and containment checks
+- safer archive extraction behavior
+- stricter access boundaries for WebUI and API features
+- reduced exposure of sensitive or overly broad functionality
+- improved handling for hardened container deployments
+
+### Container-oriented themes
+
+The public full line is also shaped by container-focused work, including:
+
+- reproducible Docker builds
+- clearer runtime defaults
+- better suitability for hardened container operation
+- groundwork for stricter HTTPS/TLS operation inside containerized deployments
 
 ### Notes
 
-This changelog is currently a condensed publication-oriented summary.
-A more detailed historical changelog may be added later.
+- this repository currently publishes the full line first
+- the lite line exists separately and is not the first public target here
+- this changelog is a condensed public summary, not a full internal development log

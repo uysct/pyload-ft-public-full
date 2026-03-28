@@ -2,28 +2,28 @@
 
 ## Reporting a vulnerability
 
-Please do not publish sensitive security issues as public GitHub issues before coordinated review.
+Please do not disclose sensitive security issues publicly before coordinated review.
 
-For security-relevant findings, prefer private reporting first.
+Private reporting is preferred for security-relevant findings affecting this repository.
 
-## Scope
+## Areas of special interest
 
-Security topics of special interest in this repository include:
+Security topics of particular interest include:
 
 - path traversal
 - archive extraction behavior
-- upload / storage containment
+- upload, temp, and storage containment
 - API access control
 - WebUI permission boundaries
 - TLS / HTTPS handling
 - container hardening assumptions
 
-## Disclosure approach
+## What to include in a report
 
-Please provide:
+Please include:
 
 - affected file(s) or feature(s)
 - impact summary
 - reproduction steps
-- expected vs actual behavior
-- mitigation ideas if available
+- expected versus actual behavior
+- mitigation ideas, if available
