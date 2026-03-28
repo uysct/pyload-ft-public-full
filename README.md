@@ -1,4 +1,4 @@
-# pyload-ng-future
+# pyload-ft-public-full
 
 A hardened, container-focused future branch of pyLoad with a strong focus on:
 
