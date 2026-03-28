@@ -1,0 +1,38 @@
+name: Feature request
+description: Suggest an improvement
+title: "[enhancement] "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What would you like to improve?
+    validations:
+      required: true
+
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Motivation
+      description: Why should this exist?
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: area
+    attributes:
+      label: Related area
+      options:
+        - label: Docker / container runtime
+        - label: WebUI
+        - label: API
+        - label: filesystem / extraction / storage
+        - label: HTTPS / TLS
+        - label: security hardening
+        - label: documentation
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional notes
