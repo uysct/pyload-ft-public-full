@@ -1,46 +1,56 @@
 # Contributing
 
-Thank you for your interest in pyLoad-ft.
+Thank you for your interest in improving pyLoad-ft.
 
-This repository currently publishes the **public full line** first.
+## General principles
 
-## Before opening large changes
+Please keep contributions focused, understandable, and easy to review.
 
-Please prefer opening an issue first for:
-
-- larger refactors
-- security-sensitive changes
-- behavioral changes in WebUI or API
-- Docker/runtime design changes
-
-## General expectations
-
-Contributions should aim to preserve the direction of this repository:
-
-- security-conscious changes
-- reproducible container behavior
-- minimal unnecessary complexity
-- clear and reviewable diffs
-- no embedded secrets, local configs, or private lab artifacts
-
-## Good contribution areas
-
-Examples of useful contributions include:
+Preferred areas of contribution include:
 
 - security hardening
-- safer filesystem/path handling
-- API/WebUI boundary improvements
-- Docker build cleanup
-- documentation improvements
-- test coverage for hardened behavior
+- safer filesystem and path handling
+- WebUI and API boundary improvements
+- Docker and container runtime improvements
+- HTTPS / TLS-related improvements
+- documentation cleanup and clarification
 
-## Please avoid
+## Before submitting changes
 
-- committing private runtime data
-- committing local TLS materials
-- mixing unrelated large changes in one patch
-- weakening security controls for convenience without strong justification
+Please try to keep pull requests:
 
-## Security issues
+- small enough to review comfortably
+- clearly explained
+- consistent with the repository scope
+- free of secrets, local runtime state, or deployment-specific leftovers
 
-For security-relevant findings, please follow the guidance in `SECURITY.md` and prefer private reporting first.
+## Security-related changes
+
+For security-sensitive work, include:
+
+- affected files or components
+- threat or risk summary
+- reproduction notes if relevant
+- expected security outcome
+- compatibility considerations
+
+Please read `SECURITY.md` before publicly opening highly sensitive issues.
+
+## Docker-related changes
+
+For Docker or runtime changes, please document:
+
+- what changed
+- why it changed
+- whether the image still builds cleanly
+- whether runtime behavior was tested
+
+## Documentation changes
+
+Documentation improvements are welcome, especially when they improve clarity, public readability, or maintenance.
+
+## Scope reminder
+
+This public repository currently focuses on the full line first.
+
+The lite line exists separately and is not the first public publication target here.
