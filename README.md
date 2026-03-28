@@ -1,8 +1,8 @@
 # pyload-ft-public-full
 
-A hardened, container-focused future branch of pyLoad / pyLoad-ng.
+pyLoad-ft is a hardened, container-focused derivative of pyLoad / pyLoad-ng.
 
-> This is an independent derivative line and not an official upstream repository.
+> pyLoad-ft is an independent derivative project and not an official upstream repository.
 
 ## Focus
 
@@ -48,4 +48,4 @@ Run:
 
 ## Notes
 
-This project is based on pyLoad / pyLoad-ng upstream work and should be treated as a hardened derivative line, not as an official upstream replacement.
+pyLoad-ft is based on pyLoad / pyLoad-ng upstream work and should be treated as a hardened derivative project, not as an official upstream replacement.
